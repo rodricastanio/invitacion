@@ -1744,7 +1744,12 @@ section.ceremonia-fiesta .addeventatc:hover .nameBtn {
 
 
 section.regalos .ola-superior:first-of-type {
-  background-image: linear-gradient(var(--color-2) 40%, var(--color-1) 100%);
+  background-image: linear-gradient(to bottom, 
+    var(--color-4) 0%,        /* ROJO desde arriba */
+    var(--color-4) 25%,       /* Sigue ROJO hasta 25% de la sección */
+    var(--color-1) 80%,       /* Empieza ROJO en 80% */
+    var(--color-1) 100%       /* ROJO hasta abajo */
+);
 }
 section.regalos .ola-superior:last-of-type {
   background-image: linear-gradient(var(--color-1) 40%, var(--color-2) 100%);
