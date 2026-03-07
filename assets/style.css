@@ -1743,7 +1743,12 @@ section.ceremonia-fiesta .addeventatc:hover .nameBtn {
 /* ---------- */
 
 
-
+section.regalos .ola-superior:first-of-type {
+  background-image: linear-gradient(var(--color-2) 40%, var(--color-1) 100%);
+}
+section.regalos .ola-superior:last-of-type {
+  background-image: linear-gradient(var(--color-1) 40%, var(--color-2) 100%);
+}
 
 /* Galeria */
 
@@ -2074,7 +2079,7 @@ section.regalos {
   padding-top: 14%;
   position: relative;
   padding-bottom: 10%;
-  background-color: var(--color-4);
+  background-color: var(--color-4);  /* Fondo ROJO para que las ondas se vean sobre rojo */
 }
 
 section.regalos .adorno {
@@ -2139,6 +2144,10 @@ section.instagram .container {
   z-index: 999;
 }
 
+
+section.regalos .container{
+  background-color: var(--color-1);
+}
 
 section.instagram:before {
   /* background-image: url('../img/img_ondas05.svg'); */
@@ -3284,6 +3293,7 @@ footer img.firma-footer {
     font-size: 45px !important;
     /* Doble !important para forzar */
     line-height: 50px !important;
+    color: var(--color-3)
   }
 
   section.regalos p.subtitle {
