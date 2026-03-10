@@ -1,5 +1,5 @@
 function actualizarContador() {
-    var fechaEvento = new Date("2026-03-20T21:30:00"); // CAMBIA ESTA FECHA
+    var fechaEvento = new Date("2026-04-11T20:30:00"); // CAMBIA ESTA FECHA
     var ahora = new Date();
     var diferencia = fechaEvento - ahora;
 

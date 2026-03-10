@@ -2,292 +2,15 @@
 
 :root {
   /* ---------- */
-
-  /* Responsive fixes */
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-
-  }
-
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  html,
-  body {
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-  }
-
-  body {
-    overflow-x: hidden;
-    width: 100vw;
-    max-width: 100vw;
-  }
-
-  .color{
-    background-color: var(--color-4);
-  }
-
-
-  img,
-  picture,
-  video,
-  iframe,
-  embed,
-  object {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .parallax-mirror,
-  .parallax-slider {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-
-  @media (max-width: 767px) {
-    .flores-grupo02-wrapper {
-      display: block !important;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 0;
-      /* Ajusta según donde quieras sobre la ola */
-      width: 80% !important;
-      max-width: 300px !important;
-      height: auto;
-      z-index: 200 !important;
-      /* Por encima de la ola (z-index: 100) */
-      pointer-events: none;
-    }
-
-
-    .bienvenida-a {
-      font-family: var(--grosor-fuente-bold);
-      font-size: 25px;
-      color: var(--color-3);
-      font-weight: 500;
-      margin-top: -5px;
-    }
-    .bienvenida-bienvenidos{
-      font-family: var(--grosor-fuente-bold);
-      font-size: 30px; /* Grande en móvil */
-      line-height: 1;
-      color: var(--color-3);
-      text-transform: uppercase;
-      font-weight: 500;
-      margin-top: 10px;
-      position: relative;
-      display: inline-block;
-    }
-
-    .bienvenida-nombre {
-      letter-spacing: 2px;
-      font-family: var(--grosor-fuente-bold);
-      font-size: 70px; /* Grande en móvil */
-      line-height: 1;
-      color: var(--color-2);
-      text-transform: uppercase;
-    }
-
-    .bienvenida-texto {
-      font-family: var(--fuente-2);
-      font-size: 20px;
-      color: var(--color-3);
-      margin-bottom: 20px;
-      line-height: 1.5;
-      font-weight: 400;
-      text-align: center;
-    }
-
-    /* Asegurar que las imágenes se superpongan */
-    .flores-grupo02-wrapper picture {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .flores-grupo02-wrapper img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* Asegurar que la ola esté debajo */
-    .ola-separador {
-      position: absolute;
-      z-index: 100;
-      bottom: 0;
-    }
-  }
-
-  @media (max-width: 768px) {
-
-    body,
-    html {
-      overflow-x: hidden;
-      width: 100%;
-    }
-
-    .d-md-flex {
-      display: block !important;
-    }
-
-    .flores-grupo02-wrapper {
-      position: absolute;
-      bottom: 20px;
-      /* SUBE o BAJA las flores sobre la ola */
-      left: 0;
-      /* LADO IZQUIERDO */
-      width: 180px;
-      /* Tamaño del grupo */
-      height: 220px;
-      /* IMPORTANTE para superposición */
-      z-index: 200;
-      /* Más que la ola */
-      pointer-events: none;
-    }
-
-    .flores-grupo02-wrapper img {
-      position: absolute;
-      bottom: 60px;
-      left: 140px;
-      width: 50%;
-      height: auto;
-    }
-
-
-
-    section.portada .portada-picture,
-    section.portada .portada-container {
-      width: 100% !important;
-    }
-
-    section.portada .portada-container .row.d-flex {
-      height: auto !important;
-      padding: 0px 10px;
-    }
-
-    section.portada .portada-container .portada-container-2 {
-      max-width: 100% !important;
-      padding: 0 12px;
-    }
-
-    section.portada .content-portada h1 {
-      font-size: 32px !important;
-      line-height: 38px !important;
-      margin-top: 15px;
-    }
-
-    section.portada .content-portada h2 {
-      font-size: 40px !important;
-      line-height: 28px !important;
-      margin-top: 30px;
-    }
-
-    .title {
-      font-size: 28px !important;
-      line-height: 34px !important;
-    }
-
-    .subtitle {
-      font-size: 16px !important;
-    }
-
-    section.portada .content-portada span.fecha {
-      font-size: 18px !important;
-      padding: 6px 12px !important;
-      margin-bottom: 20px !important;
-    }
-
-    section.cuenta-regresiva .box-aros,
-    section.cuenta-regresiva .box-aros .box-circulo {
-      width: 100% !important;
-      height: auto !important;
-      padding: 10px !important;
-    }
-
-    section.cuenta-regresiva .box-aros .box-circulo {
-      padding: 10px !important;
-    }
-
-    section.cuenta-regresiva .reloj-col span.number {
-      font-size: 28px !important;
-    }
-
-    section.cuenta-regresiva .reloj-col span.time {
-      font-size: 14px !important;
-    }
-
-    section.ceremonia-fiesta .col-ceremonia h3,
-    section.ceremonia-fiesta .col-fiesta h3 {
-      font-size: 40px !important;
-      min-width: auto !important;
-      padding: 6px 8px !important;
-    }
-
-    section.fiesta {
-      padding-top: 6% !important;
-      padding-bottom: 6% !important;
-    }
-
-    .item-fiesta .content-item-fiesta {
-      min-height: auto !important;
-      padding: 20px !important;
-    }
-
-    .banner-contacto-web {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }
-
-    .modal .modal-content {
-      box-sizing: border-box;
-      max-width: 100%;
-    }
-
-    /* Adornos y elementos absolutamente posicionados: restringir ancho y centrar */
-    .adorno,
-    .adorno-1,
-    .adorno-2,
-    .adorno-3,
-    #modalMusica .adorno,
-    .modal .adorno-1 {
-      max-width: 90% !important;
-      width: auto !important;
-      left: 0 !important;
-      right: 0 !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-
-    section.portada .portada-picture::after {
-      right: 0 !important;
-    }
-
-
-  }
-
-
- /* Paleta de colores - Inspirada en River Plate */
---color-1: #FFFFFF; /* Blanco puro - Para fondos o texto */
---color-2: #DA291C;  /* Rojo River (Rojo bandera, ligeramente apagado/oscuro) */
---color-3: #000000;  /* Negro - Para contrastes y textos */
---color-4: #E00000;  /* Rojo alternativo (más brillante, para botones o detalles que resalten) */
---color-5: #F5F5F5;  /* Blanco humo / Gris muy clarito - Para fondos alternos o tarjetas */
---color-6: #ea3232;
+  /* Paleta de colores - Inspirada en River Plate */
+  --color-1: #FFFFFF; /* Blanco puro - Para fondos o texto */
+  --color-2: #000000;  /* Negro - Para textos principales y contrastes */
+  --color-3: #DA291C;  /* Rojo River (Rojo bandera) - Color principal para acentos */
+  --color-4: #B22222;  /* Rojo ladrillo/oscuro - Para fondos y secciones */
+  --color-5: #F8F9FA;  /* Blanco humo / Gris muy clarito - Para fondos alternos o tarjetas */
+  --color-6: #A9A9A9;  /* Gris oscuro - Para detalles sutiles y bordes */
+  --color-7: #DA291C;  /* Rojo River (para gradientes) */
+  --color-8: #8B0000;  /* Rojo oscuro (para gradientes) */
 
   /* Fuentes */
   --fuente-1: 'Playfair Display',
@@ -304,7 +27,283 @@
 
 }
 
+/* Responsive fixes */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.color{
+  background-color: var(--color-4);
+}
+
+
+img,
+picture,
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.parallax-mirror,
+.parallax-slider {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 767px) {
+  .flores-grupo02-wrapper {
+    display: block !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    /* Ajusta según donde quieras sobre la ola */
+    width: 80% !important;
+    max-width: 300px !important;
+    height: auto;
+    z-index: 200 !important;
+    /* Por encima de la ola (z-index: 100) */
+    pointer-events: none;
+  }
+
+
+  .bienvenida-a {
+    font-family: var(--grosor-fuente-bold);
+    font-size: 25px;
+    color: var(--color-3);
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  .bienvenida-bienvenidos{
+    font-family: var(--grosor-fuente-bold);
+    font-size: 30px; /* Grande en móvil */
+    line-height: 1;
+    color: var(--color-3);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .bienvenida-nombre {
+    letter-spacing: 2px;
+    font-family: var(--grosor-fuente-bold);
+    font-size: 70px; /* Grande en móvil */
+    line-height: 1;
+    color: var(--color-2);
+    text-transform: uppercase;
+  }
+
+  .bienvenida-texto {
+    font-family: var(--fuente-2);
+    font-size: 20px;
+    color: var(--color-3);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  /* Asegurar que las imágenes se superpongan */
+  .flores-grupo02-wrapper picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .flores-grupo02-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Asegurar que la ola esté debajo */
+  .ola-separador {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .d-md-flex {
+    display: block !important;
+  }
+
+  .flores-grupo02-wrapper {
+    position: absolute;
+    bottom: 20px;
+    /* SUBE o BAJA las flores sobre la ola */
+    left: 0;
+    /* LADO IZQUIERDO */
+    width: 180px;
+    /* Tamaño del grupo */
+    height: 220px;
+    /* IMPORTANTE para superposición */
+    z-index: 200;
+    /* Más que la ola */
+    pointer-events: none;
+  }
+
+  .flores-grupo02-wrapper img {
+    position: absolute;
+    bottom: 60px;
+    left: 140px;
+    width: 50%;
+    height: auto;
+  }
+
+
+
+  section.portada .portada-picture,
+  section.portada .portada-container {
+    width: 100% !important;
+  }
+
+  section.portada .portada-container .row.d-flex {
+    height: auto !important;
+    padding: 0px 10px;
+  }
+
+  section.portada .portada-container .portada-container-2 {
+    max-width: 100% !important;
+    padding: 0 12px;
+  }
+
+  section.portada .content-portada h1 {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-top: 15px;
+  }
+
+  section.portada .content-portada h2 {
+    font-size: 40px !important;
+    line-height: 28px !important;
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+
+  .subtitle {
+    font-size: 16px !important;
+  }
+
+  section.portada .content-portada span.fecha {
+    font-size: 18px !important;
+    padding: 6px 12px !important;
+    margin-bottom: 20px !important;
+  }
+
+  section.cuenta-regresiva .box-aros,
+  section.cuenta-regresiva .box-aros .box-circulo {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px !important;
+    top: 80px
+
+  }
+
+  section.cuenta-regresiva .box-aros .box-circulo {
+    padding: 10px !important;
+  }
+
+  section.cuenta-regresiva .reloj-col span.number {
+    font-size: 28px !important;
+  }
+
+  section.cuenta-regresiva .reloj-col span.time {
+    font-size: 14px !important;
+  }
+
+  section.ceremonia-fiesta .col-ceremonia h3,
+  section.ceremonia-fiesta .col-fiesta h3 {
+    font-size: 40px !important;
+    min-width: auto !important;
+    padding: 6px 8px !important;
+  }
+
+  section.fiesta {
+    padding-top: 6% !important;
+    padding-bottom: 6% !important;
+  }
+
+  .item-fiesta .content-item-fiesta {
+    min-height: auto !important;
+    padding: 20px !important;
+  }
+
+  .banner-contacto-web {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .modal .modal-content {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  /* Adornos y elementos absolutamente posicionados: restringir ancho y centrar */
+  .adorno,
+  .adorno-1,
+  .adorno-2,
+  .adorno-3,
+  #modalMusica .adorno,
+  .modal .adorno-1 {
+    max-width: 90% !important;
+    width: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  section.portada .portada-picture::after {
+    right: 0 !important;
+  }
+
+
+}
 
 /* Scroll */
 
@@ -314,7 +313,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-4);
+  background: var(--color-5);
   border-radius: 10px;
 }
 
@@ -324,7 +323,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-2);
+  background: var(--color-4);
 }
 
 .custom-control-label::before {
@@ -353,7 +352,7 @@
 }
 
 .fancybox-bg {
-  background-color: var(--color-3) !important;
+  background-color: var(--color-2) !important;
 }
 
 .boton {
@@ -378,7 +377,7 @@
 }
 
 .boton:hover {
-  background: var(--color-5);
+  background: var(--color-2);
   text-decoration: none;
   color: #fff;
 }
@@ -388,7 +387,7 @@
   display: inline-block;
   font-family: var(--fuente-1);
   font-weight: var(--grosor-fuente-regular);
-  color: var(--color-1);
+  color: var(--color-2);
   font-size: 60px;
   line-height: 70px;
   margin-bottom: 0;
@@ -399,7 +398,7 @@
   display: inline-block;
   font-family: var(--fuente-2);
   font-weight: var(--grosor-fuente-regular);
-  color: var(--color-3);
+  color: var(--color-6);
   font-size: 20px;
 }
 
@@ -419,12 +418,12 @@ a {
 
 /* Fondo modales */
 .modal-backdrop {
-  background-color: var(--color-4);
-  opacity: 1 !important;
+  background-color: var(--color-2);
+  opacity: 0.8 !important;
 }
 
 .backdrop-modal-musica .modal-backdrop {
-  background-color: var(--color-4);
+  background-color: var(--color-2);
   opacity: 1 !important;
 }
 
@@ -445,7 +444,7 @@ a {
 
 
 .modal.modal-transparent .close {
-  color: var(--color-2);
+  color: var(--color-1);
   font-size: 40px;
   text-shadow: none;
   opacity: 1;
@@ -462,7 +461,7 @@ a {
 }
 
 .modal.modal-transparent .modal-header h3 {
-  color: var(--color-3);
+  color: var(--color-1);
   font-family: var(--fuente-2);
   font-weight: var(--grosor-fuente-regular);
   text-align: center;
@@ -490,7 +489,7 @@ a {
   border-radius: 20px;
   margin: 10px 8px;
   opacity: 0.75;
-  border: 2px solid var(--color-4);
+  border: 2px solid var(--color-1);
 }
 
 .flags-laguages li a:hover {
@@ -523,7 +522,7 @@ a {
 
 .preloader-area {
   position: fixed;
-  /* background: var(--color-4); */
+  /* background: var(--color-1); */
   z-index: 11000;
   height: 100%;
   width: 100%;
@@ -560,7 +559,7 @@ section.portada .portada-picture {
 }
 
 .portada-con-espacio {
-  background-color: var(--color-6);
+  background-color: var(--color-1);
   /* El color de fondo de la capa */
   padding-bottom: 0;
   /* El grosor del espacio blanco abajo */
@@ -594,7 +593,7 @@ section.portada .portada-picture {
 }
 
 #modalVestuario .modal-body p {
-  color: var(--color-3);
+  color: var(--color-2);
   font-family: var(--fuente-2);
   font-size: 18px;
   line-height: 1.5;
@@ -623,7 +622,7 @@ section.portada .portada-picture {
 }
 
 #modalVestuario .modal-body .boton:hover {
-  background-color: var(--color-5);
+  background-color: var(--color-2);
   transform: translateY(-2px);
   box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.30);
   text-decoration: none;
@@ -637,7 +636,7 @@ section.portada .portada-picture {
 }
 
 #modalRegalos .gracias-regalo {
-  color: var(--color-2);
+  color: var(--color-3);
   font-family: var(--fuente-2);
   font-size: 18px;
   line-height: 1.5;
@@ -654,7 +653,7 @@ section.portada .portada-picture {
 #modalRegalos .dato-item {
   margin-bottom: 25px;
   padding-bottom: 15px;
-  border-bottom: 1px dashed rgba(140, 94, 68, 0.2);
+  border-bottom: 1px dashed var(--color-6);
 }
 
 #modalRegalos .dato-item:last-child {
@@ -663,7 +662,7 @@ section.portada .portada-picture {
 }
 
 #modalRegalos .dato-item h6 {
-  color: var(--color-3);
+  color: var(--color-2);
   font-family: var(--fuente-1);
   font-size: 22px;
   font-weight: 600;
@@ -677,14 +676,14 @@ section.portada .portada-picture {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--color-5);
   padding: 12px 15px;
   border-radius: 8px;
-  border: 1px solid rgba(140, 94, 68, 0.1);
+  border: 1px solid var(--color-6);
 }
 
 #modalRegalos .dato-texto {
-  color: var(--color-3);
+  color: var(--color-2);
   font-family: var(--fuente-2);
   font-size: 16px;
   font-weight: 500;
@@ -713,7 +712,7 @@ section.portada .portada-picture {
 }
 
 #modalRegalos .btn-copiar:hover {
-  background-color: var(--color-5);
+  background-color: var(--color-2);
   transform: translateY(-1px);
 }
 
@@ -726,7 +725,7 @@ section.portada .portada-picture {
 }
 
 #modalRegalos .mensaje-copiado {
-  background-color: rgba(147, 168, 172, 0.9);
+  background-color: var(--color-3);
   color: white;
   padding: 10px 15px;
   border-radius: 6px;
@@ -830,7 +829,7 @@ section.portada .portada-picture {
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  border: 8px solid var(--color-4);
+  border: 8px solid var(--color-3);
   /* Borde más grueso (era 5px) */
 }
 
@@ -870,7 +869,7 @@ section.portada .portada-picture {
     /* Aumentado de 80px a 110px */
     top: -55px;
     /* Subido (era -40px) */
-    border: 6px solid var(--color-4);
+    border: 6px solid var(--color-3);
     /* Borde más grueso */
   }
 
@@ -904,7 +903,7 @@ section.portada .portada-picture {
     /* Aumentado de 70px a 95px */
     top: -48px;
     /* Subido (era -35px) */
-    border: 5px solid var(--color-4);
+    border: 5px solid var(--color-3);
   }
 
   #modalAsistencia .modal-dialog.modal-dialog-centered {
@@ -978,7 +977,7 @@ section.portada .portada-picture {
 #modalMapa #titulo {
 
   font-size: 25px;
-  color: var(--color-3);
+  color: var(--color-2);
   font-family: var(--fuente-1);
 }
 
@@ -1018,7 +1017,7 @@ section.portada .portada-picture {
   section.portada .portada-container {
     width: 45%;
     background-color: var(--color-1);
-    /* background-image: linear-gradient(var(--color-5), var(--color-4)); */
+    /* background-image: linear-gradient(var(--color-5), var(--color-1)); */
     padding-bottom: 60px;
     position: relative;
   }
@@ -1026,7 +1025,7 @@ section.portada .portada-picture {
   section.portada .portada-container .portada-container-2 {
     width: 100%;
     max-width: 610px;
-    background: var(--color-4);
+    background: var(--color-1);
     padding-bottom: 20px;
     position: relative;
   }
@@ -1043,7 +1042,7 @@ section.portada .portada-picture {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(29, 29, 27, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: 0;
     top: 0;
     left: 0;
@@ -1148,14 +1147,14 @@ section.portada .portada-picture {
     font-family: var(--fuente-1);
     font-size: 29px;
     line-height: 25px;
-    color: var(--color-3);
+    color: var(--color-2);
     padding: 8px 30px 10px;
     margin-bottom: 50px;
     margin-top: 0;
     border: 2px solid; 
     border-image-slice: 1;
     border-width: 3px;
-    border-image-source: linear-gradient(to right, var(--color-4), var(--color-3), var(--color-4)); 
+    border-image-source: linear-gradient(to right, var(--color-3), var(--color-2), var(--color-3)); 
   }
 
   section.portada .content-portada h1+span:before,
@@ -1170,12 +1169,12 @@ section.portada .portada-picture {
 
   section.portada .content-portada h1+span:before {
     left: 65px;
-    background: var(--color-3);
+    background: var(--color-2);
   }
 
   section.portada .content-portada h1+span:after {
     right: 65px;
-    background: var(--color-3);
+    background: var(--color-2);
   }
 
   section.portada .content-portada h1 {
@@ -1187,7 +1186,7 @@ section.portada .portada-picture {
     font-size: 80px;
     line-height: 85px;
     margin-bottom: 0;
-    color: var(--color-4);
+    color: var(--color-3);
     position: relative;
     z-index: 2;
   }
@@ -1220,7 +1219,7 @@ section.portada .portada-picture {
     font-size: 45px;
     line-height: 85px;
     margin-bottom: 0;
-    color: var(--color-3);
+    color: var(--color-2);
   }
 
   section.portada .box-nombres-fecha-portada h1:nth-of-type(2) {
@@ -1238,7 +1237,7 @@ section.portada .portada-picture {
     font-size: 50px;
     font-family: var(--fuente-2);
     font-weight: var(--grosor-fuente-light);
-    color: var(--color-4)
+    color: var(--color-3)
   }
 
   section.portada .box-frase-portada {
@@ -1269,8 +1268,8 @@ section.portada .portada-picture {
   }
 
   ul.lang-inv li a {
-    color: var(--color-4);
-    background-color: var(--color-3);
+    color: var(--color-1);
+    background-color: var(--color-2);
     font-size: 14px;
     font-family: var(--fuente-2);
     font-weight: 400;
@@ -1284,8 +1283,8 @@ section.portada .portada-picture {
 
   ul.lang-inv li a:hover {
     text-decoration: none;
-    background: var(--color-2);
-    color: var(--color-4)
+    background: var(--color-3);
+    color: var(--color-1)
   }
 
 
@@ -1341,7 +1340,7 @@ section.portada .portada-picture {
     display: inline-block;
     font-family: var(--fuente-1);
     font-weight: var(--grosor-fuente-regular);
-    color: var(--color-2);
+    color: var(--color-3);
     font-size: 50px;
     line-height: 60px;
     margin-top: 50px;
@@ -1376,7 +1375,7 @@ section.portada .portada-picture {
 
   /* Eliminar o reducir bordes */
   section.cuenta-regresiva .reloj-col {
-    border-right: 0.5px solid var(--color-2) !important;
+    border-right: 0.5px solid var(--color-6) !important;
   }
 
   /* El último sin borde */
@@ -1400,7 +1399,7 @@ section.cuenta-regresiva .reloj {
 
 section.cuenta-regresiva .reloj-col {
   width: auto;
-  border-right: 1px solid var(--color-2);
+  border-right: 1px solid var(--color-6);
   padding: 0 15px;
 }
 
@@ -1432,7 +1431,7 @@ section.cuenta-regresiva .reloj-col.no-border {
 section.cuenta-regresiva .reloj-col span.number {
   display: inline-block;
   width: 100%;
-  color: var(--color-3);
+  color: var(--color-2);
   font-family: var(--fuente-2);
   font-weight: var(--grosor-fuente-bold);
   font-size: 40px;
@@ -1441,7 +1440,7 @@ section.cuenta-regresiva .reloj-col span.number {
 section.cuenta-regresiva .reloj-col span.time {
   display: inline-block;
   width: 100%;
-  color: var(--color-2);
+  color: var(--color-3);
   font-family: var(--fuente-1);
   font-weight: var(--grosor-fuente-regular);
   font-size: 20px;
@@ -1450,7 +1449,7 @@ section.cuenta-regresiva .reloj-col span.time {
 section.cuenta-regresiva p.fin-cuenta {
   font-size: 30px;
   line-height: 35px;
-  color: var(--color-3);
+  color: var(--color-2);
   font-family: var(--fuente-1);
   margin-top: 30px;
 }
@@ -1469,7 +1468,7 @@ section.cuenta-regresiva p.fin-cuenta {
 section.ceremonia-fiesta {
   padding-bottom: 20%;
   position: relative;
-  /* background: url(../img/lineas01.svg) center 0 no-repeat var(--color-4); */
+  /* background: url(../img/lineas01.svg) center 0 no-repeat var(--color-1); */
 }
 
 section.ceremonia-fiesta .adorno {
@@ -1583,7 +1582,7 @@ section.ceremonia-fiesta .col-fiesta h3 {
   min-width: 60%;
   padding: 10px 0;
   margin-top: 40px;
-  /* background-color: var(--c}olor-2); */
+  /* background-color: var(--color-3); */
 }
 
 section.ceremonia-fiesta .col-ceremonia h3:before,
@@ -1623,7 +1622,7 @@ section.ceremonia-fiesta .info-col .info-box {
 section.ceremonia-fiesta .info-col .info-box h6 {
   font-family: var(--fuente-2);
   font-weight: bold;
-  color: var(--color-1);
+  color: var(--color-2);
   font-size: 25px;
 }
 
@@ -1706,7 +1705,7 @@ section.ceremonia-fiesta .titulo-fiesta:after {
 section.ceremonia-fiesta .info-col .info-box p {
   font-family: var(--fuente-2);
   font-weight: bold;
-  color: var(--color-2);
+  color: var(--color-3);
   font-size: 20px;
 }
 
@@ -1743,17 +1742,7 @@ section.ceremonia-fiesta .addeventatc:hover .nameBtn {
 /* ---------- */
 
 
-section.regalos .ola-superior:first-of-type {
-  background-image: linear-gradient(to bottom, 
-    var(--color-4) 0%,        /* ROJO desde arriba */
-    var(--color-4) 25%,       /* Sigue ROJO hasta 25% de la sección */
-    var(--color-1) 80%,       /* Empieza ROJO en 80% */
-    var(--color-1) 100%       /* ROJO hasta abajo */
-);
-}
-section.regalos .ola-superior:last-of-type {
-  background-image: linear-gradient(var(--color-1) 40%, var(--color-2) 100%);
-}
+
 
 /* Galeria */
 
@@ -1761,7 +1750,7 @@ section.galeria {
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
-  background-image: linear-gradient(var(--color-1), var(--color-4));
+  background-image: linear-gradient(var(--color-1), var(--color-1));
 
   overflow: hidden;
   /* Para que la ola no desborde */
@@ -1854,7 +1843,7 @@ section.galeria .content-fotos .polaroid {
   padding: 15px;
   padding-bottom: 100px;
   margin: 5px;
-  background-color: var(--color-3);
+  background-color: var(--color-5);
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.40);
   transition: all 0.5s 0s ease;
 }
@@ -1864,7 +1853,7 @@ section.galeria .slick-slide:focus {
 }
 
 section.galeria .slick-center .polaroid {
-  background-color: var(--color-5) !important;
+  background-color: var(--color-1) !important;
 }
 
 .content-fotos .shadow-left {
@@ -1881,7 +1870,7 @@ section.galeria .slick-center .polaroid {
 
 section.galeria .slick-dots li button:before {
   font-size: 45px !important;
-  color: var(--color-5) !important;
+  color: var(--color-3) !important;
   opacity: 0.60;
 }
 
@@ -1898,7 +1887,9 @@ section.galeria h2.title {
 
 section.galeria p.subtitle {
   font-size: 22px !important;
+
 }
+
 
 /* ---------- */
 
@@ -1907,7 +1898,7 @@ section.galeria p.subtitle {
 
 section.fiesta {
   /* background: url('../img/img_ondas03.svg') center top no-repeat; */
-  background-image: linear-gradient(var(--color-4), var(--color-4));
+  background-image: linear-gradient(var(--color-1), var(--color-5));
   padding-top: 14%;
   position: relative;
   padding-bottom: 17%;
@@ -1974,7 +1965,7 @@ section.fiesta .item-fiesta {
 
 
 section.fiesta .item-fiesta h3 {
-  color: var(--color-3);
+  color: var(--color-2);
   font-family: var(--fuente-2);
   font-weight: var(--grosor-fuente-bold);
   text-transform: uppercase;
@@ -1985,7 +1976,7 @@ section.fiesta .item-fiesta h3 {
 }
 
 section.fiesta .item-fiesta p {
-  color: var(--color-3);
+  color: var(--color-6);
   margin-bottom: 25px;
   /* Aumentado espacio abajo */
   font-family: var(--fuente-2);
@@ -2083,8 +2074,9 @@ section.fiesta .item-fiesta .adorno.adorno-2 {
 section.regalos {
   padding-top: 14%;
   position: relative;
-  padding-bottom: 10%;
-  background-color: var(--color-4);  /* Fondo ROJO para que las ondas se vean sobre rojo */
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background-image: linear-gradient(var(--color-1), var(--color-3));  /* Fondo ROJO para que las ondas se vean sobre rojo */
 }
 
 section.regalos .adorno {
@@ -2117,14 +2109,31 @@ section.regalos .adorno-3 {
 
 section.regalos .title {
   margin-bottom: 10px;
+  color: var(--color-2);
 
 }
 
 section.regalos .anim-regalos {
-  width: 70px;
-  margin: 1px auto 40px;
+  width: 100px;
+  margin: 30px auto 40px;
+  background-color: var(--color-1);
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  position: relative;  /* Necesario para el SVG */
 }
 
+section.regalos .anim-regalos svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 80%;
+  position: relative;
+  top: -5px;  /* Valor negativo sube, positivo baja */
+}
 /* ---------- */
 
 
@@ -2150,9 +2159,7 @@ section.instagram .container {
 }
 
 
-section.regalos .container{
-  background-color: var(--color-1);
-}
+
 
 section.instagram:before {
   /* background-image: url('../img/img_ondas05.svg'); */
@@ -2217,8 +2224,9 @@ section.instagram:after {
 
 section.footer {
   position: relative;
-  padding: 60px 0;
-  background-color: var(--color-4);
+  padding: 0 0;
+  margin-top: 0;
+  background-color: var(--color-3);
 }
 
 /* Asegurar que la fila esté centrada verticalmente */
@@ -2259,13 +2267,13 @@ section.footer .box-nombres-fecha-portada #fecha {
   font-family: var(--fuente-1);
   font-size: 24px;
   line-height: 20px;
-  color: var(--color-3);
+  color: var(--color-1);
   padding: 8px 25px 10px;
   margin-bottom: 30px;
   border: 2px solid;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: linear-gradient(to right, var(--color-4), var(--color-3), var(--color-4));
+  border-image-source: linear-gradient(to right, var(--color-1), var(--color-2), var(--color-1));
 }
 
 section.footer .box-nombres-fecha-portada h1 {
@@ -2289,7 +2297,7 @@ section.footer .box-nombres-fecha-portada h2 {
   font-size: 36px;
   line-height: 65px;
   margin-bottom: 0;
-  color: var(--color-3);
+  color: var(--color-2);
 }
 
 section.footer .wrapper-nombre {
@@ -2341,7 +2349,7 @@ section.footer .col-acciones-footer ul li:last-child {
 
 section.footer .col-acciones-footer ul a,
 section.footer .col-acciones-footer .addeventatc span.nameBtn {
-  color: var(--color-3);
+  color: var(--color-1);
   font-family: var(--fuente-2);
   font-weight: var(--grosor-fuente-regular);
   font-size: 20px;
@@ -2569,7 +2577,7 @@ footer p a {
 
 footer p a:hover {
   text-decoration: underline;
-  color: var(--color-4)
+  color: var(--color-1)
 }
 
 footer img.firma-footer {
@@ -2588,7 +2596,7 @@ footer img.firma-footer {
 
 .modal-dialog .modal-title {
   font-weight: 700;
-  color: var(--color-4);
+  color: var(--color-2);
 }
 
 .modal-dialog form label {
@@ -2599,7 +2607,7 @@ footer img.firma-footer {
 .modal-dialog form input,
 .modal-dialog form textarea {
   border: none;
-  border-bottom: 1px solid var(--color-4);
+  border-bottom: 1px solid var(--color-6);
 }
 
 .modal-dialog .white-circle-icon {
@@ -2612,7 +2620,7 @@ footer img.firma-footer {
 
 .modal-dialog ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--color-2);
+  color: var(--color-6);
   opacity: 1;
   font-family: var(--fuente-2);
   /* Firefox */
@@ -2620,13 +2628,13 @@ footer img.firma-footer {
 
 .modal-dialog :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: var(--color-2);
+  color: var(--color-6);
   font-family: var(--fuente-2);
 }
 
 .modal-dialog ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: var(--color-2);
+  color: var(--color-6);
   font-family: var(--fuente-2);
 }
 
@@ -2650,7 +2658,7 @@ footer img.firma-footer {
   font-weight: var(--grosor-fuente-regular);
   font-size: 80px;
   line-height: 85px;
-  color: var(--color-1);
+  color: var(--color-2);
   width: 100%;
 }
 
@@ -2661,7 +2669,7 @@ footer img.firma-footer {
   font-weight: var(--grosor-fuente-regular);
   font-size: 80px;
   line-height: 85px;
-  color: var(--color-1);
+  color: var(--color-2);
   display: inline-block;
   width: 100%;
   position: relative;
@@ -2675,13 +2683,13 @@ footer img.firma-footer {
   font-size: 30px;
   line-height: 30px;
   font-family: var(--fuente-2);
-  color: var(--color-3);
+  color: var(--color-2);
   text-transform: initial;
 }
 
 #modalMusica .modal-content span.aclara-musica {
   font-size: 20px;
-  color: var(--color-3);
+  color: var(--color-2);
   font-weight: 300;
   margin-top: 40px;
   margin-bottom: 25px;
@@ -2693,15 +2701,15 @@ footer img.firma-footer {
 
 #modalMusica .boton {
   font-size: 15px;
-  border: 1px solid var(--color-3);
+  border: 1px solid var(--color-2);
   display: inline-block;
   text-transform: inherit;
 }
 
 #modalMusica .boton:hover {
-  border: 1px solid var(--color-3);
-  background-color: var(--color-4);
-  color: var(--color-3)
+  border: 1px solid var(--color-2);
+  background-color: var(--color-1);
+  color: var(--color-2)
 }
 
 
@@ -2711,11 +2719,11 @@ footer img.firma-footer {
 }
 
 #modalMusica .adorno.adorno-1 {
-  border-bottom: 1px solid var(--color-2);
+  border-bottom: 1px solid var(--color-3);
 }
 
 #modalMusica .adorno.adorno-2 {
-  border-top: 1px solid var(--color-2);
+  border-top: 1px solid var(--color-3);
   margin-top: 45px;
 }
 
@@ -2748,7 +2756,7 @@ footer img.firma-footer {
 }
 
 .modal .modal-content-2 p {
-  color: var(--color-1);
+  color: var(--color-2);
   font-family: var(--fuente-2);
   font-weight: var(--grosor-fuente-regular);
 }
@@ -2787,7 +2795,7 @@ footer img.firma-footer {
 }
 
 .modal .modal-content-2 .close:hover {
-  background-color: var(--color-1);
+  background-color: var(--color-3);
   opacity: 1;
 }
 
@@ -2806,7 +2814,7 @@ footer img.firma-footer {
 .modal .modal-content-2 .modal-header .modal-title {
   font-size: 35px;
   font-family: var(--fuente-1);
-  color: var(--color-3);
+  color: var(--color-2);
 }
 
 .modal .modal-content-2 .modal-footer {
@@ -3021,14 +3029,14 @@ footer img.firma-footer {
   width: 100%;
   display: inline-block;
   font-weight: 700;
-  color: var(--color-1)
+  color: var(--color-2)
 }
 
 .modal .msj-content p {
   text-align: center;
   width: 100%;
   display: inline-block;
-  color: var(--color-1)
+  color: var(--color-2)
 }
 
 
@@ -3094,7 +3102,7 @@ footer img.firma-footer {
   left: 0;
   width: 100%;
   height: auto;
-  background: var(--color-1);
+  background: var(--color-3);
   z-index: 9999;
   padding: 0;
   margin: 0;
@@ -3117,7 +3125,7 @@ footer img.firma-footer {
 
 .banner-contacto-web a:first-child {
   background: #fff;
-  color: var(--color-1);
+  color: var(--color-3);
   border-radius: 10px;
   padding: 3px 10px;
 }
@@ -3132,7 +3140,7 @@ footer img.firma-footer {
 /* Estilos card de invitados */
 .bloque-grupo-invitados {
   padding: 0px 0 50px;
-  background-color: var(--color-4);
+  background-color: var(--color-1);
 }
 
 .bloque-grupo-invitados .card-grupo-invitados .card-content {
@@ -3147,18 +3155,18 @@ footer img.firma-footer {
   line-height: 30px;
   padding: 10px;
   border-radius: 50%;
-  background: var(--color-1);
+  background: var(--color-3);
   font-weight: 600;
   margin-bottom: 8px;
   font-family: var(--fuente-1);
-  color: var(--color-4);
+  color: var(--color-1);
 }
 
 .bloque-grupo-invitados .titulo-grupo {
   margin: 0;
   font-size: 40px;
   font-family: var(--fuente-1);
-  color: var(--color-3);
+  color: var(--color-2);
 }
 
 .bloque-grupo-invitados .mensaje-grupo {
@@ -3179,7 +3187,7 @@ footer img.firma-footer {
   font-size: 20px;
   padding: 6px 10px;
   border-radius: 6px;
-  background: rgba(0, 0, 0, 0.04);
+  background: var(--color-5);
   margin: 6px auto;
   width: fit-content;
 }
@@ -3187,7 +3195,7 @@ footer img.firma-footer {
 .bloque-grupo-invitados .acompanantes-info {
   margin-top: 6px;
   font-size: 17px;
-  color: var(--color-5);
+  color: var(--color-6);
   font-family: var(--fuente-2);
 }
 
@@ -3219,7 +3227,7 @@ footer img.firma-footer {
   object-fit: cover;
 }
 
-/* Mobile adjustments: hide duplicate portada pseudo-onda and recentrar adornos */
+/* Mobile adjustments: hide duplicate portada pseudo-onda y recentrar adornos */
 @media (max-width: 768px) {
   section.portada::after {
     display: none;
@@ -3298,7 +3306,7 @@ footer img.firma-footer {
     font-size: 45px !important;
     /* Doble !important para forzar */
     line-height: 50px !important;
-    color: var(--color-3)
+    color: var(--color-2)
   }
 
   section.regalos p.subtitle {
@@ -3364,7 +3372,7 @@ section.portada .portada-picture {
     left: 0;
     width: 100%;
     height: 100%;
-     background: linear-gradient(to bottom, var(--color-4), var(--color-5));
+     background: linear-gradient(to bottom, var(--color-4), var(--color-2));
     z-index: 9999; /* Asegura que esté por encima de todo al inicio */
     display: flex;
     justify-content: center;
@@ -3419,7 +3427,7 @@ body.bienvenida-activa {
 .bienvenida-adorno svg {
     width: 50px;
     height: auto;
-    fill: var(--color-3); /* Asegura que herede el color */
+    fill: var(--color-1); /* Asegura que herede el color */
 }
 
 /* Título principal */
@@ -3439,7 +3447,7 @@ body.bienvenida-activa {
 .bienvenida-bienvenidos {
     font-family: var(--fuente-2);
     font-size: 20px;
-    color: var(--color-3);
+    color: var(--color-1);
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 300;
@@ -3448,7 +3456,7 @@ body.bienvenida-activa {
 .bienvenida-a {
     font-family: var(--fuente-2);
     font-size: 25px;
-    color: var(--color-4);
+    color: var(--color-1);
     font-weight: 400;
     margin-top: -5px;
 }
@@ -3488,7 +3496,7 @@ body.bienvenida-activa {
 .bienvenida-texto {
     font-family: var(--fuente-2);
     font-size: 55px;
-    color: var(--color-4);
+    color: var(--color-1);
     margin-bottom: 20px;
     line-height: 1.5;
     font-weight: bold;
