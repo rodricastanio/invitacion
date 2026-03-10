@@ -77,6 +77,10 @@ object {
 }
 
 @media (max-width: 767px) {
+.bienvenida-nombre{
+  font-size: 80px;
+}
+
   .flores-grupo02-wrapper {
     display: block !important;
     position: absolute;
@@ -113,9 +117,8 @@ object {
   }
 
   .bienvenida-nombre {
-    letter-spacing: 2px;
     font-family: var(--grosor-fuente-bold);
-    font-size: 70px; /* Grande en móvil */
+    font-size: 80px; /* Grande en móvil */
     line-height: 1;
     color: var(--color-2);
     text-transform: uppercase;
@@ -123,7 +126,7 @@ object {
 
   .bienvenida-texto {
     font-family: var(--fuente-2);
-    font-size: 20px;
+    font-size: 10px;
     color: var(--color-3);
     margin-bottom: 20px;
     line-height: 1.5;
@@ -148,6 +151,7 @@ object {
 
   /* Asegurar que la ola esté debajo */
   .ola-separador {
+    display: none !important;
     position: absolute;
     z-index: 100;
     bottom: 0;
@@ -155,6 +159,9 @@ object {
 }
 
 @media (max-width: 768px) {
+  .bienvenida-nombre{
+  font-size: 80px;
+}
 
   body,
   html {
@@ -555,7 +562,12 @@ section.portada {
 section.portada .portada-picture {
   width: 55%;
   position: relative;
+  overflow: visible;
+}
 
+section.portada .portada-picture::before,
+section.portada .portada-picture::after {
+  display: none !important;
 }
 
 .portada-con-espacio {
@@ -3463,7 +3475,9 @@ body.bienvenida-activa {
 
 .bienvenida-nombre {
     font-family: var(--fuente-1);
-    font-size: 80px; /* Grande en móvil */
+    font-size: 140px; /* Grande en móvil */
+        letter-spacing: 15px;
+
     line-height: 1;
     color: var(--color-1);
     text-transform: uppercase;
@@ -3471,7 +3485,7 @@ body.bienvenida-activa {
     margin-top: 10px;
     position: relative;
     display: inline-block;
-    padding: 0 10px;
+  
 }
 /* Efecto de "apertura" para el nombre, similar a tu portada */
 .bienvenida-nombre::before {
@@ -3495,7 +3509,7 @@ body.bienvenida-activa {
 /* Texto descriptivo */
 .bienvenida-texto {
     font-family: var(--fuente-2);
-    font-size: 55px;
+    font-size: 20px;
     color: var(--color-1);
     margin-bottom: 20px;
     line-height: 1.5;
@@ -3521,13 +3535,13 @@ body.bienvenida-activa {
 /* Ajuste para pantallas muy pequeñas (ej: iPhone SE) */
 @media (max-width: 380px) {
     .bienvenida-nombre {
-        font-size: 55px;
+        font-size: 40px;
     }
     .bienvenida-bienvenidos {
         font-size: 18px;
         letter-spacing: 3px;
     }
     .bienvenida-texto {
-        font-size: 16px;
+        font-size: 10px;
     }
 }
