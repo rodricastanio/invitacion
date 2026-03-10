@@ -3511,7 +3511,7 @@ body.bienvenida-activa {
   display: block;
   text-align: center;
   width: 100%;
-  left: 0;
+  left: 8px;
   right: 0;
 }
 
