@@ -3500,22 +3500,18 @@ body.bienvenida-activa {
 
 .bienvenida-nombre {
   font-family: var(--fuente-1);
-  margin-left: 35px;
   font-size: 140px;
   letter-spacing: 10px;
   line-height: 1;
   color: var(--color-1);
   text-transform: uppercase;
   font-weight: 540;
-  margin: 10px auto 0;
-  /* Cambiado a auto para centrar */
+  margin: 10px auto 0;        /* Solo UN margin */
   position: relative;
   display: block;
-  /* Cambiado de inline-block a block */
   text-align: center;
   width: 100%;
   left: 0;
-  /* Asegura que no haya desplazamiento */
   right: 0;
 }
 
