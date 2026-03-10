@@ -3,20 +3,28 @@
 :root {
   /* ---------- */
   /* Paleta de colores - Inspirada en River Plate */
-  --color-1: #FFFFFF; /* Blanco puro - Para fondos o texto */
-  --color-2: #000000;  /* Negro - Para textos principales y contrastes */
-  --color-3: #DA291C;  /* Rojo River (Rojo bandera) - Color principal para acentos */
-  --color-4: #B22222;  /* Rojo ladrillo/oscuro - Para fondos y secciones */
-  --color-5: #F8F9FA;  /* Blanco humo / Gris muy clarito - Para fondos alternos o tarjetas */
-  --color-6: #A9A9A9;  /* Gris oscuro - Para detalles sutiles y bordes */
-  --color-7: #DA291C;  /* Rojo River (para gradientes) */
-  --color-8: #8B0000;  /* Rojo oscuro (para gradientes) */
+  --color-1: #FFFFFF;
+  /* Blanco puro - Para fondos o texto */
+  --color-2: #000000;
+  /* Negro - Para textos principales y contrastes */
+  --color-3: #DA291C;
+  /* Rojo River (Rojo bandera) - Color principal para acentos */
+  --color-4: #B22222;
+  /* Rojo ladrillo/oscuro - Para fondos y secciones */
+  --color-5: #F8F9FA;
+  /* Blanco humo / Gris muy clarito - Para fondos alternos o tarjetas */
+  --color-6: #A9A9A9;
+  /* Gris oscuro - Para detalles sutiles y bordes */
+  --color-7: #DA291C;
+  /* Rojo River (para gradientes) */
+  --color-8: #8B0000;
+  /* Rojo oscuro (para gradientes) */
 
   /* Fuentes */
   --fuente-1: 'Playfair Display',
-  serif;
+    serif;
   --fuente-2: 'Open Sans',
-  sans-serif;
+    sans-serif;
 
   --grosor-fuente-light: 300;
   --grosor-fuente-regular: 400;
@@ -54,7 +62,7 @@ body {
   max-width: 100vw;
 }
 
-.color{
+.color {
   background-color: var(--color-4);
 }
 
@@ -77,11 +85,15 @@ object {
 }
 
 @media (max-width: 767px) {
-.bienvenida-nombre{
-  font-size: 80px;
-    text-align: center;  /* Asegura centrado en móvil */
+  .bienvenida-nombre {
+    font-size: 80px;
+    letter-spacing: 8px;
+    /* Reducido para móvil */
+    text-align: center;
     width: 100%;
-}
+    margin: 10px auto 0;
+    display: block;
+  }
 
   .flores-grupo02-wrapper {
     display: block !important;
@@ -106,9 +118,11 @@ object {
     font-weight: 500;
     margin-top: -5px;
   }
-  .bienvenida-bienvenidos{
+
+  .bienvenida-bienvenidos {
     font-family: var(--grosor-fuente-bold);
-    font-size: 30px; /* Grande en móvil */
+    font-size: 30px;
+    /* Grande en móvil */
     line-height: 1;
     color: var(--color-3);
     text-transform: uppercase;
@@ -120,7 +134,8 @@ object {
 
   .bienvenida-nombre {
     font-family: var(--grosor-fuente-bold);
-    font-size: 80px; /* Grande en móvil */
+    font-size: 80px;
+    /* Grande en móvil */
     line-height: 1;
     color: var(--color-2);
     text-transform: uppercase;
@@ -161,9 +176,9 @@ object {
 }
 
 @media (max-width: 768px) {
-  .bienvenida-nombre{
-  font-size: 80px;
-}
+  .bienvenida-nombre {
+    font-size: 80px;
+  }
 
   body,
   html {
@@ -248,7 +263,6 @@ object {
     height: auto !important;
     padding: 10px !important;
     top: 80px
-
   }
 
   section.cuenta-regresiva .box-aros .box-circulo {
@@ -1165,10 +1179,10 @@ section.portada .portada-picture::after {
     padding: 8px 30px 10px;
     margin-bottom: 50px;
     margin-top: 0;
-    border: 2px solid; 
+    border: 2px solid;
     border-image-slice: 1;
     border-width: 3px;
-    border-image-source: linear-gradient(to right, var(--color-3), var(--color-2), var(--color-3)); 
+    border-image-source: linear-gradient(to right, var(--color-3), var(--color-2), var(--color-3));
   }
 
   section.portada .content-portada h1+span:before,
@@ -1321,7 +1335,7 @@ section.portada .portada-picture::after {
     top: -200px
   }
 
-  #contador{
+  #contador {
     position: relative;
     left: 8px;
     top: 30px;
@@ -1782,7 +1796,7 @@ section.galeria .ola-superior {
   /* Para que no interfiera con clics */
 }
 
-.colorblanco{
+.colorblanco {
   background-color: var(--color-1);
 }
 
@@ -1916,7 +1930,7 @@ section.fiesta {
   padding-top: 14%;
   position: relative;
   padding-bottom: 17%;
- 
+
 }
 
 section.fiesta h2.title {
@@ -2090,7 +2104,8 @@ section.regalos {
   position: relative;
   padding-bottom: 0;
   margin-bottom: 0;
-  background-image: linear-gradient(var(--color-1), var(--color-3));  /* Fondo ROJO para que las ondas se vean sobre rojo */
+  background-image: linear-gradient(var(--color-1), var(--color-3));
+  /* Fondo ROJO para que las ondas se vean sobre rojo */
 }
 
 section.regalos .adorno {
@@ -2137,7 +2152,8 @@ section.regalos .anim-regalos {
   justify-content: center;
   align-items: center;
   line-height: 0;
-  position: relative;  /* Necesario para el SVG */
+  position: relative;
+  /* Necesario para el SVG */
 }
 
 section.regalos .anim-regalos svg {
@@ -2146,8 +2162,10 @@ section.regalos .anim-regalos svg {
   height: auto;
   max-width: 80%;
   position: relative;
-  top: -5px;  /* Valor negativo sube, positivo baja */
+  top: -5px;
+  /* Valor negativo sube, positivo baja */
 }
+
 /* ---------- */
 
 
@@ -3247,7 +3265,7 @@ footer img.firma-footer {
     display: none;
   }
 
-  .bienvenida-titulo{
+  .bienvenida-titulo {
     font-size: 80px !important;
   }
 
@@ -3381,77 +3399,82 @@ section.portada .portada-picture {
 /* PANTALLA DE BIENVENIDA (MOBILE FIRST) */
 /* -------------------------------------------------- */
 #pantalla-bienvenida {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-     background: linear-gradient(to bottom, var(--color-4), var(--color-2));
-    z-index: 9999; /* Asegura que esté por encima de todo al inicio */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 1s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--color-4), var(--color-2));
+  z-index: 9999;
+  /* Asegura que esté por encima de todo al inicio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
 }
 
 /* Evita que el cuerpo se mueva mientras está la bienvenida */
 body.modal-open {
-    overflow: hidden !important;
+  overflow: hidden !important;
 }
 
 /* Bloquear scroll cuando la pantalla de bienvenida está activa */
 html.bienvenida-activa {
-    overflow: hidden !important;
-    height: 100% !important;
-    position: fixed !important;
+  overflow: hidden !important;
+  height: 100% !important;
+  position: fixed !important;
 }
 
 body.bienvenida-activa {
-    overflow: hidden !important;
-    height: 100% !important;
-    width: 100% !important;
-    position: fixed !important;
-    margin: 0 !important;
-    padding: 0 !important;
+  overflow: hidden !important;
+  height: 100% !important;
+  width: 100% !important;
+  position: fixed !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Clase para ocultar la pantalla con una transición */
 #pantalla-bienvenida.fade-out {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* Contenedor del contenido para mejor control */
 .bienvenida-contenido {
-    max-width: 400px; /* Ancho máximo para que no se vea muy grande en tablets */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  max-width: 400px;
+  /* Ancho máximo para que no se vea muy grande en tablets */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Adornos (corazones, flores, etc.) */
 .bienvenida-adorno {
-    margin: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
+
 .bienvenida-adorno.abajo {
-    margin: 30px 0 10px 0;
+  margin: 30px 0 10px 0;
 }
+
 .bienvenida-adorno svg {
-    width: 50px;
-    height: auto;
-    fill: var(--color-1); /* Asegura que herede el color */
+  width: 50px;
+  height: auto;
+  fill: var(--color-1);
+  /* Asegura que herede el color */
 }
 
 /* Título principal */
 .bienvenida-titulo {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 30px;
-    align-items: center;
-    font-size: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+  align-items: center;
+  font-size: 80px;
 
 }
 
@@ -3459,93 +3482,100 @@ body.bienvenida-activa {
 
 
 .bienvenida-bienvenidos {
-    font-family: var(--fuente-2);
-    font-size: 20px;
-    color: var(--color-1);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 300;
+  font-family: var(--fuente-2);
+  font-size: 20px;
+  color: var(--color-1);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
 }
 
 .bienvenida-a {
-    font-family: var(--fuente-2);
-    font-size: 25px;
-    color: var(--color-1);
-    font-weight: 400;
-    margin-top: -5px;
+  font-family: var(--fuente-2);
+  font-size: 25px;
+  color: var(--color-1);
+  font-weight: 400;
+  margin-top: -5px;
 }
 
 .bienvenida-nombre {
-    font-family: var(--fuente-1);
-    font-size: 140px;
-    letter-spacing: 15px;
-    line-height: 1;
-    color: var(--color-1);
-    text-transform: uppercase;
-    font-weight: 540;
-    margin-top: 10px;
-    position: relative;
-    display: inline-block;
-    text-align: center;  /* AÑADE ESTO */
-    width: 100%;         /* AÑADE ESTO */
+  font-family: var(--fuente-1);
+  font-size: 140px;
+  letter-spacing: 15px;
+  line-height: 1;
+  color: var(--color-1);
+  text-transform: uppercase;
+  font-weight: 540;
+  margin: 10px auto 0;
+  /* Cambiado a auto para centrar */
+  position: relative;
+  display: block;
+  /* Cambiado de inline-block a block */
+  text-align: center;
+  width: 100%;
+  left: 0;
+  /* Asegura que no haya desplazamiento */
+  right: 0;
 }
-/* Efecto de "apertura" para el nombre, similar a tu portada */
-/* Efecto de "apertura" para el nombre, similar a tu portada */
-/* Efecto de "apertura" para el nombre, similar a tu portada */
+
 .bienvenida-nombre::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;  /* ESTA ES LA LÍNEA QUE FALTABA */
-    transform: translate(-50%, -50%);
-    width: 120%;
-    height: 100%;
-    background-image: url('./assets/apertura.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.4;
-    z-index: -1;
-    pointer-events: none;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 100%;
+  background-image: url('./assets/apertura.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+  pointer-events: none;
 }
 
 
 /* Texto descriptivo */
 .bienvenida-texto {
-    font-family: var(--fuente-2);
-    font-size: 20px;
-    color: var(--color-1);
-    margin-bottom: 20px;
-    line-height: 1.5;
-    font-weight: bold;
-    text-align: center;
+  font-family: var(--fuente-2);
+  font-size: 20px;
+  color: var(--color-1);
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* El botón "Empezar" usa la clase .boton que ya tienes definida */
 #btn-empezar {
-    width: auto;
-    min-width: 200px;
-    padding: 18px 30px;
-    font-size: 22px;
-    border: none;
-    cursor: pointer;
-    /* Pequeño efecto de escala al pasar el mouse (no esencial en móvil pero queda bien) */
-    transition: transform 0.2s ease, background-color 0.3s ease;
+  width: auto;
+  min-width: 200px;
+  padding: 18px 30px;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  /* Pequeño efecto de escala al pasar el mouse (no esencial en móvil pero queda bien) */
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
+
 #btn-empezar:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 /* Ajuste para pantallas muy pequeñas (ej: iPhone SE) */
 @media (max-width: 380px) {
-    .bienvenida-nombre {
-        font-size: 40px;
+  .bienvenida-nombre {
+        font-size: 50px;  /* Aún más pequeño */
+        letter-spacing: 5px;
     }
-    .bienvenida-bienvenidos {
-        font-size: 18px;
-        letter-spacing: 3px;
-    }
-    .bienvenida-texto {
-        font-size: 10px;
-    }
+
+  .bienvenida-bienvenidos {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  .bienvenida-texto {
+    font-size: 10px;
+  }
 }
