@@ -79,6 +79,8 @@ object {
 @media (max-width: 767px) {
 .bienvenida-nombre{
   font-size: 80px;
+    text-align: center;  /* Asegura centrado en móvil */
+    width: 100%;
 }
 
   .flores-grupo02-wrapper {
@@ -3475,9 +3477,8 @@ body.bienvenida-activa {
 
 .bienvenida-nombre {
     font-family: var(--fuente-1);
-    font-size: 140px; /* Grande en móvil */
-        letter-spacing: 15px;
-
+    font-size: 140px;
+    letter-spacing: 15px;
     line-height: 1;
     color: var(--color-1);
     text-transform: uppercase;
@@ -3485,22 +3486,25 @@ body.bienvenida-activa {
     margin-top: 10px;
     position: relative;
     display: inline-block;
-  
+    text-align: center;  /* AÑADE ESTO */
+    width: 100%;         /* AÑADE ESTO */
 }
+/* Efecto de "apertura" para el nombre, similar a tu portada */
+/* Efecto de "apertura" para el nombre, similar a tu portada */
 /* Efecto de "apertura" para el nombre, similar a tu portada */
 .bienvenida-nombre::before {
     content: '';
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;  /* ESTA ES LA LÍNEA QUE FALTABA */
     transform: translate(-50%, -50%);
     width: 120%;
     height: 100%;
-    background-image: url('./assets/apertura.png'); /* Usamos tu misma imagen */
+    background-image: url('./assets/apertura.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.4; /* Más sutil para que no opaque el texto */
+    opacity: 0.4;
     z-index: -1;
     pointer-events: none;
 }
