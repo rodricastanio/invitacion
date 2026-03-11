@@ -353,6 +353,8 @@ object {
 .custom-control-label::before {
   height: 20px;
   width: 20px;
+    border-color: var(--color-2) !important; /* Borde negro siempre */
+
 }
 
 .custom-control-label::after {
@@ -360,10 +362,20 @@ object {
   width: 20px;
 }
 
+.custom-control-label {
+  color: var(--color-2); /* Texto negro */
+}
+
+/* Puntito negro cuando está seleccionado */
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+  background-color: var(--color-2); /* Negro */
+  border-radius: 50%;
+}
+
 .custom-control-input:checked~.custom-control-label::before {
-  color: var(--color-1);
-  border-color: var(--color-1);
-  background-color: var(--color-1);
+  color: var(--color-2);        /* Color de la palomita */
+  border-color: var(--color-2);  /* Color del borde cuando está seleccionado */
+  background-color: var(--color-1); /* Fondo blanco */
   outline: none;
 }
 
