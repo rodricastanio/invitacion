@@ -22,7 +22,7 @@
   </audio>
   <!-- Preconexión para recursos de audio si están en otro dominio -->
   <link rel="preload" as="audio" href="./assets/cancion.mp3">
-  <title>Delfina Mis 15 años</title>
+  <title>Cumpleaños de Leo</title>
 
 
 
@@ -781,6 +781,8 @@
 
 
 
+
+
             <a href="#" class="boton modal-vestuario" data-toggle="modal" data-target="#modalVestuario">
               Ver más
             </a>
@@ -789,11 +791,40 @@
 
         </div>
 
+        <!-- Tips y Notas -->
+        <div class="col-md-4 item-fiesta">
 
+          <div class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
 
+            <h3>Tips y Notas</h3>
 
+            <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
+              <div class="anim-tips">
+                <!-- Podés usar el mismo SVG que tenés en otras partes o uno genérico -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                  stroke="var(--color-3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a10 10 0 0 0-9 14.5 10 10 0 0 0 2.6 3l-1.2 3.5 4-1.5a10 10 0 1 0 3.6-19.5z" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+            </div>
 
+            <p>
+              Información importante <br> para la fiesta
+            </p>
+
+            <a href="#" class="boton modal-tips" data-toggle="modal" data-target="#modalTips">
+              Ver más
+            </a>
+
+          </div>
+
+        </div>
       </div>
+    </div>
+
+
+    </div>
 
     </div>
     </div>
@@ -1195,18 +1226,13 @@
       <div class="modal-content">
         <div class="modal-content-2">
 
-
-
           <div class="img-top-modal d-flex justify-content-center align-items-start">
-
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
-
             <div class="white-circle-icon">
               <img class="" src="./assets/vestuario.svg" alt="">
             </div>
-
           </div>
 
           <div class="modal-header">
@@ -1214,7 +1240,6 @@
           </div>
 
           <div class="modal-body">
-            <!-- CONTENIDO AGREGADO -->
             <p
               style="color: var(--color-2); font-family: var(--fuente-2); font-size: 18px; line-height: 1.5; margin-bottom: 25px; text-align: center;">
               <strong>¡Vení como te sientas más cómodo!</strong>
@@ -1224,520 +1249,527 @@
               La idea es que todos la pasemos bien. <br>
               No hay un código estricto, solo traer buena onda y ganas de celebrar.
             </p>
-            <div class="modal-footer"></div>
-
           </div>
+
+          <div class="modal-footer"></div>
+
         </div>
       </div>
     </div>
-    <!-- Modal tips-->
-    <div id="modalTips" class="modal fade" tabindex="-1">
-      <div class="modal-dialog modal-md modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-content-2">
+  </div>
+  <!-- Modal tips-->
+  <div id="modalTips" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-content-2">
 
-            <picture>
-              <img src="./assets/flores_Grupo04.png" alt="" loading="lazy">
-              <img class="adorno adorno-1 aos-init aos-animate" data-aos="fade-right" data-aos-delay="300"
-                data-aos-duration="1000" data-aos-once="false" src="./assets/flores_Grupo04.png" alt="" loading="lazy">
-            </picture>
+          
 
-
-            <div class="img-top-modal d-flex justify-content-center align-items-start">
-
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-              </button>
-
-              <div class="white-circle-icon">
-                <img class="" src="./assets/tips.svg" alt="">
-              </div>
-
-            </div>
-
-
-
-            <div class="modal-header">
-
-              <h5 class="modal-title">Tips y Notas</h5>
-
-            </div>
-
-            <div class="modal-body">
-
-              <p>Contenido Tips y Notas</p>
-
-            </div>
-
-
-            <div class="modal-footer"></div>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal regalos-->
-    <div id="modalRegalos" class="modal fade" tabindex="-1">
-      <div class="modal-dialog modal-md modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-content-2">
-
-
-
-            <div class="img-top-modal d-flex justify-content-center align-items-start">
-
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-              </button>
-
-              <div class="white-circle-icon">
-                <img class="" src="./assets/img_circuloRegalo.svg" alt="">
-              </div>
-
-            </div>
-
-            <div class="modal-header">
-              <h5 class="modal-title">Regalos</h5>
-            </div>
-
-            <div class="modal-body">
-              CONTENIDO AGREGADO
-              <p class="gracias-regalo">
-                ¡Gracias por el regalo!.
-              </p>
-
-              <div class="datos-transferencia">
-                Alias
-                <div class="dato-item">
-                  <h6>Alias</h6>
-                  <div class="dato-contenido">
-                    <span class="dato-texto" id="alias-text">categoria2011.nr</span>
-                    <button class="btn-copiar" data-text="categoria2011.nr" data-tipo="alias">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        viewBox="0 0 16 16">
-                        <path
-                          d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
-                        <path
-                          d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
-                      </svg>
-                      Copiar
-                    </button>
-                  </div>
-                </div>
-
-                CBU
-                <div class="dato-item">
-                  <h6>CBU</h6>
-                  <div class="dato-contenido">
-                    <span class="dato-texto" id="cbu-text">0000003100082658867200</span>
-                    <button class="btn-copiar" data-text="0000003100082658867200" data-tipo="cbu">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        viewBox="0 0 16 16">
-                        <path
-                          d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
-                        <path
-                          d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
-                      </svg>
-                      Copiar
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mensaje-copiado" id="mensaje-copiado">
-                ¡Copiado al portapapeles!
-              </div>
-            </div>
-
-            <div class="modal-footer">
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal mapa-->
-    <div id="modalMapa" class="modal fade" tabindex="-1">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-content-2">
-
-
-
-            <div class="img-top-modal d-flex justify-content-center align-items-start">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-
-            <div class="modal-header">
-              <p class="titulo">¿Cómo llegar?</p>
-            </div>
-
-            <div class="modal-body">
-              <!-- IFRAME DE GOOGLE MAPS - ELIMINA EL LOADER Y PONE ESTO -->
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d867.8471068635993!2d-58.231727194600815!3d-34.791992907570005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32919bb2f7c03%3A0x1ed868d6a4057dd9!2sSociedad%20de%20Fomento%20Jose%20Maria%20Freyre!5e0!3m2!1ses!2sar!4v1773187078521!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
-
-            <div class="modal-footer">
-              <a class="boton ampliar-mapa" target="_blank"
-                href="https://www.google.com/maps/search/?api=1&query=Clahe+Eventos+Varela+II">
-                Ampliar mapa
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal cambio de idioma -->
-
-    <!-- Modal -->
-    <div class="modal fade modal-transparent" id="modal-lang" tabindex="-1" role="dialog" aria-labelledby=""
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-
-          <div class="modal-header">
-
-            <h3>
-              Seleccionar país </h3>
-
+          <div class="img-top-modal d-flex justify-content-center align-items-start">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
+            <div class="white-circle-icon">
+              <img class="" src="./assets/tips.svg" alt="">
+            </div>
+          </div>
 
-
+          <div class="modal-header">
+            <h5 class="modal-title">Tips y Notas</h5>
           </div>
 
           <div class="modal-body">
-            <div class="flags-laguages">
+            <p
+              style="color: var(--color-3); font-family: var(--fuente-1); font-size: 22px; line-height: 1.3; margin-bottom: 20px; text-align: center; font-weight: 600;">
+              ⏰ ¡Importante! ⏰
+            </p>
 
-              <ul class="d-flex flex-wrap justify-content-center align-items-center">
-                <li><a class="change-lang" country="ar" lang="es-AR" href="#"><img loading="lazy"
-                      src="./assets/es-AR.svg" alt="Argentina"></a></li>
-              </ul>
+            <p
+              style="color: var(--color-2); font-family: var(--fuente-2); font-size: 16px; line-height: 1.6; margin-bottom: 20px; text-align: center;">
+              <strong>El cumpleaños es a las 20:30hs, pero...</strong>
+            </p>
 
-            </div>
+            <p
+              style="color: var(--color-2); font-family: var(--fuente-2); font-size: 16px; line-height: 1.6; margin-bottom: 20px; text-align: center; background-color: var(--color-5); padding: 15px; border-radius: 10px;">
+              <strong style="color: var(--color-3);">¡Es una fiesta SORPRESA!</strong><br>
+              El homenajeado va a llegar 1 hora después, así que<br>
+              <strong>es muy importante que todos estemos a las 20:30hs</strong><br>
+              para recibirlo como se merece cuando llegue.
+            </p>
 
+            <p
+              style="color: var(--color-2); font-family: var(--fuente-2); font-size: 16px; line-height: 1.6; margin-bottom: 20px; text-align: center;">
+              <strong>🍷 Para tomar 🥤</strong><br>
+              La idea es compartir entre todos, así que<br>
+              <strong>cada uno puede traer su bebida</strong> (lo que más le guste).
+            </p>
 
+            <p
+              style="color: var(--color-2); font-family: var(--fuente-2); font-size: 16px; line-height: 1.6; margin-bottom: 10px; text-align: center; font-style: italic;">
+              ¡La previa la hacemos entre todos!
+            </p>
           </div>
+
+          <div class="modal-footer"></div>
+
         </div>
       </div>
     </div>
+  </div>
+  <!-- FIN Modal tips-->
 
-    <!-- Muestro el banner si tiene parametro "banner" y si el modelo es visible en la web (para que tenga donde dirigir) -->
+  <!-- Modal regalos-->
+  <div id="modalRegalos" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-content-2">
+
+          <div class="img-top-modal d-flex justify-content-center align-items-start">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="white-circle-icon">
+              <img class="" src="./assets/img_circuloRegalo.svg" alt="">
+            </div>
+          </div>
+
+          <div class="modal-header">
+            <h5 class="modal-title">Regalos</h5>
+          </div>
+
+          <div class="modal-body">
+            <p class="gracias-regalo">¡Gracias por el regalo!</p>
+
+            <div class="datos-transferencia">
+              Alias
+              <div class="dato-item">
+                <h6>Alias</h6>
+                <div class="dato-contenido">
+                  <span class="dato-texto" id="alias-text">categoria2011.nr</span>
+                  <button class="btn-copiar" data-text="categoria2011.nr" data-tipo="alias">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                      <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                    </svg>
+                    Copiar
+                  </button>
+                </div>
+              </div>
+
+              CBU
+              <div class="dato-item">
+                <h6>CBU</h6>
+                <div class="dato-contenido">
+                  <span class="dato-texto" id="cbu-text">0000003100082658867200</span>
+                  <button class="btn-copiar" data-text="0000003100082658867200" data-tipo="cbu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                      <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                    </svg>
+                    Copiar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="mensaje-copiado" id="mensaje-copiado">
+              ¡Copiado al portapapeles!
+            </div>
+          </div>
+
+          <div class="modal-footer"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN Modal regalos-->
+  <!-- Modal mapa-->
+  <div id="modalMapa" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-content-2">
 
 
 
-    <!-- Banner demo caducidad (solo para invitaciones demo) -->
+          <div class="img-top-modal d-flex justify-content-center align-items-start">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+
+          <div class="modal-header">
+            <p class="titulo">¿Cómo llegar?</p>
+          </div>
+
+          <div class="modal-body">
+            <!-- IFRAME DE GOOGLE MAPS - ELIMINA EL LOADER Y PONE ESTO -->
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d867.8471068635993!2d-58.231727194600815!3d-34.791992907570005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32919bb2f7c03%3A0x1ed868d6a4057dd9!2sSociedad%20de%20Fomento%20Jose%20Maria%20Freyre!5e0!3m2!1ses!2sar!4v1773187078521!5m2!1ses!2sar"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+
+          <div class="modal-footer">
+            <a class="boton ampliar-mapa" target="_blank"
+              href="https://www.google.com/maps/search/?api=1&query=Clahe+Eventos+Varela+II">
+              Ampliar mapa
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal cambio de idioma -->
+
+  <!-- Modal -->
+  <div class="modal fade modal-transparent" id="modal-lang" tabindex="-1" role="dialog" aria-labelledby=""
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h3>
+            Seleccionar país </h3>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+
+
+        </div>
+
+        <div class="modal-body">
+          <div class="flags-laguages">
+
+            <ul class="d-flex flex-wrap justify-content-center align-items-center">
+              <li><a class="change-lang" country="ar" lang="es-AR" href="#"><img loading="lazy" src="./assets/es-AR.svg"
+                    alt="Argentina"></a></li>
+            </ul>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Muestro el banner si tiene parametro "banner" y si el modelo es visible en la web (para que tenga donde dirigir) -->
 
 
 
-    <!-- Scripts -->
-    <!-- Varaibles para JS desde config -->
-    <!-- <script type="text/javascript" id="www-widgetapi-script" src="./assets/www-widgetapi.js.descargar" async=""></script> -->
-    <!-- <script src="./assets/iframe_api"></script> -->
-    <script>
-      var _pathApp = "./assets/";
-
-      var _pathProducto = "./assets/";
-
-      var tokenProducto = "";
-
-      // Idioma
-      var langJs = "es"
+  <!-- Banner demo caducidad (solo para invitaciones demo) -->
 
 
 
+  <!-- Scripts -->
+  <!-- Varaibles para JS desde config -->
+  <!-- <script type="text/javascript" id="www-widgetapi-script" src="./assets/www-widgetapi.js.descargar" async=""></script> -->
+  <!-- <script src="./assets/iframe_api"></script> -->
+  <script>
+    var _pathApp = "./assets/";
 
-      // Idioma js en MODELO e INVITACION
-      var langJsVariante = "es-AR";
+    var _pathProducto = "./assets/";
+
+    var tokenProducto = "";
+
+    // Idioma
+    var langJs = "es"
 
 
 
 
-
-
-      // Cuenta regresiva
-      var fechaCuentaRegresiva = "02/14/2026 22:00:00";
-
-      // Mapas
-      var latitudFiesta = -34.6201481;
-      var longitudFiesta = -58.4046887;
-
-      // Links Mapas
-      var linkMapsFiesta = "";
-
-
-
-    </script>
-
-
-    <!-- Idioma por defecto js -->
-    <script>
-      var langDefault = 'es-AR';
-    </script>
-
-
-
-    <!-- // Consulto tipo de dispositivo -->
-    <script>
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
-        var device = 'mobile';
-      } else {
-        var device = 'desktop';
-      }
-    </script>
+    // Idioma js en MODELO e INVITACION
+    var langJsVariante = "es-AR";
 
 
 
 
 
 
-    <!-- External Libraries -->
-    <script src="./assets/jquery-3.5.1.min.js"></script>
-    <script src="./assets/popper.min.js"></script>
+    // Cuenta regresiva
+    var fechaCuentaRegresiva = "02/14/2026 22:00:00";
 
-    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
-    <script src="./assets/bootstrap.min.js"></script>
-    <script src="./assets/slick.min.js"></script>
-    <script src="./assets/jquery.fancybox.min.js"></script>
-    <script src="./assets/aos.js"></script>
-    <script src="./assets/scripts.js"></script>
+    // Mapas
+    var latitudFiesta = -34.6201481;
+    var longitudFiesta = -58.4046887;
+
+    // Links Mapas
+    var linkMapsFiesta = "";
 
 
-    <script>
-      $(document).ready(function () {
-        const numeroSofi = '5491132851319';
 
-        // 1. MODAL ASISTENCIA
-        $('#sendAsistencia').on('click', function (e) {
-          e.preventDefault();
-          var nombre = $('#nombreAsistente').val();
-          var asiste = $('input[name="asistencia"]:checked').val();
-          // var comentarios = $('#comentariosAsistente').val();
+  </script>
 
-          if (nombre.trim() === "") {
-            alert("Por favor, ingresa tu nombre completo.");
-            return;
-          }
 
-          var mensaje = "Hola Leo, ";
-          mensaje += (asiste === "Si") ? "¡Confirmo que voy a ir a tu fiesta!" : "Lamentablemente no voy a poder ir.";
-          mensaje += "\n\n*Invitado:* " + nombre;
+  <!-- Idioma por defecto js -->
+  <script>
+    var langDefault = 'es-AR';
+  </script>
 
-          // if (comentarios.trim() !== "") {
-          //   mensaje += "\n*Nota:* " + comentarios;
-          // }
 
-          window.open('https://wa.me/' + numeroSofi + '?text=' + encodeURIComponent(mensaje), '_blank');
-          $('#modalAsistencia').modal('hide');
-        });
 
-        // 2. MODAL SUGERIR CANCIÓN (CORREGIDO)
-        $('#sendSugerenciaCancion').on('click', function (e) {
-          e.preventDefault();
-          var nombre = $('#nombreSugerencia').val();
-          var cancion = $('#descripcionSugerencia').val();
-          // var link = $('#linkSugerencia').val();
+  <!-- // Consulto tipo de dispositivo -->
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
-          if (nombre.trim() === "" || cancion.trim() === "") {
-            alert("Por favor, completa tu nombre y el de la canción.");
-            return;
-          }
+      var device = 'mobile';
+    } else {
+      var device = 'desktop';
+    }
+  </script>
 
-          var mensaje = "Hola Leo, quiero sugerir una canción para tu fiesta \n\n";
-          mensaje += "*Canción:* " + cancion + "\n";
-          mensaje += "*De:* " + nombre;
 
-          // if (link.trim() !== "") {
-          //   mensaje += "\n*Link:* " + link;
-          // }
 
-          window.open('https://wa.me/' + numeroSofi + '?text=' + encodeURIComponent(mensaje), '_blank');
-          $('#modalSugerirCancion').modal('hide');
-        });
 
-        // Funcionalidad para copiar al portapapeles
-        // Función para copiar texto al portapapeles
-        function copiarAlPortapapeles(texto) {
-          navigator.clipboard.writeText(texto).then(function () {
-            console.log('Texto copiado: ' + texto);
+
+
+  <!-- External Libraries -->
+  <script src="./assets/jquery-3.5.1.min.js"></script>
+  <script src="./assets/popper.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+  <script src="./assets/bootstrap.min.js"></script>
+  <script src="./assets/slick.min.js"></script>
+  <script src="./assets/jquery.fancybox.min.js"></script>
+  <script src="./assets/aos.js"></script>
+  <script src="./assets/scripts.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      const numeroSofi = '5491132851319';
+
+      // 1. MODAL ASISTENCIA
+      $('#sendAsistencia').on('click', function (e) {
+        e.preventDefault();
+        var nombre = $('#nombreAsistente').val();
+        var asiste = $('input[name="asistencia"]:checked').val();
+        // var comentarios = $('#comentariosAsistente').val();
+
+        if (nombre.trim() === "") {
+          alert("Por favor, ingresa tu nombre completo.");
+          return;
+        }
+
+        var mensaje = "Hola Leo, ";
+        mensaje += (asiste === "Si") ? "¡Confirmo que voy a ir a tu fiesta!" : "Lamentablemente no voy a poder ir.";
+        mensaje += "\n\n*Invitado:* " + nombre;
+
+        // if (comentarios.trim() !== "") {
+        //   mensaje += "\n*Nota:* " + comentarios;
+        // }
+
+        window.open('https://wa.me/' + numeroSofi + '?text=' + encodeURIComponent(mensaje), '_blank');
+        $('#modalAsistencia').modal('hide');
+      });
+
+      // 2. MODAL SUGERIR CANCIÓN (CORREGIDO)
+      $('#sendSugerenciaCancion').on('click', function (e) {
+        e.preventDefault();
+        var nombre = $('#nombreSugerencia').val();
+        var cancion = $('#descripcionSugerencia').val();
+        // var link = $('#linkSugerencia').val();
+
+        if (nombre.trim() === "" || cancion.trim() === "") {
+          alert("Por favor, completa tu nombre y el de la canción.");
+          return;
+        }
+
+        var mensaje = "Hola Leo, quiero sugerir una canción para tu fiesta \n\n";
+        mensaje += "*Canción:* " + cancion + "\n";
+        mensaje += "*De:* " + nombre;
+
+        // if (link.trim() !== "") {
+        //   mensaje += "\n*Link:* " + link;
+        // }
+
+        window.open('https://wa.me/' + numeroSofi + '?text=' + encodeURIComponent(mensaje), '_blank');
+        $('#modalSugerirCancion').modal('hide');
+      });
+
+      // Funcionalidad para copiar al portapapeles
+      // Función para copiar texto al portapapeles
+      function copiarAlPortapapeles(texto) {
+        navigator.clipboard.writeText(texto).then(function () {
+          console.log('Texto copiado: ' + texto);
+          return true;
+        }).catch(function (err) {
+          console.error('Error al copiar: ', err);
+          // Fallback para navegadores más antiguos
+          var textArea = document.createElement("textarea");
+          textArea.value = texto;
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          try {
+            document.execCommand('copy');
+            console.log('Texto copiado con fallback');
             return true;
-          }).catch(function (err) {
-            console.error('Error al copiar: ', err);
-            // Fallback para navegadores más antiguos
-            var textArea = document.createElement("textarea");
-            textArea.value = texto;
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-            try {
-              document.execCommand('copy');
-              console.log('Texto copiado con fallback');
-              return true;
-            } catch (err) {
-              console.error('Fallback también falló: ', err);
-              return false;
-            } finally {
-              document.body.removeChild(textArea);
-            }
+          } catch (err) {
+            console.error('Fallback también falló: ', err);
+            return false;
+          } finally {
+            document.body.removeChild(textArea);
+          }
+        });
+      }
+
+      // Evento para botones de copiar en el modal de regalos
+      $(document).on('click', '#modalRegalos .btn-copiar', function (e) {
+        e.preventDefault();
+        var texto = $(this).data('text');
+        var tipo = $(this).data('tipo');
+
+        if (copiarAlPortapapeles(texto)) {
+          // Mostrar mensaje de confirmación
+          var mensaje = $('#modalRegalos #mensaje-copiado');
+          mensaje.text(tipo === 'alias' ? '¡Alias copiado!' : '¡CBU copiado!');
+          mensaje.fadeIn(300);
+
+          // Ocultar mensaje después de 2 segundos
+          setTimeout(function () {
+            mensaje.fadeOut(300);
+          }, 2000);
+
+          // Cambiar temporalmente el texto del botón
+          var boton = $(this);
+          var textoOriginal = boton.html();
+          boton.html('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/></svg>Copiado');
+          boton.css('background-color', 'var(--color-5)');
+
+          // Restaurar después de 1.5 segundos
+          setTimeout(function () {
+            boton.html(textoOriginal);
+            boton.css('background-color', '');
+          }, 1500);
+        }
+      });
+
+      // Asegurar que el modal esté listo
+      $('#modalRegalos').on('shown.bs.modal', function () {
+        // Resetear mensaje cuando se abre el modal
+        $('#modalRegalos #mensaje-copiado').hide();
+      });
+      // LÓGICA DE MÚSICA Y BOTÓN EMPEZAR - SIMPLE Y DIRECTA
+      // Elementos clave
+      const pantallaBienvenida = document.getElementById('pantalla-bienvenida');
+      const btnEmpezar = document.getElementById('btn-empezar');
+      const audioElement = document.getElementById('cancion');
+
+      // Función para bloquear scroll
+      function bloquearScroll() {
+        document.documentElement.classList.add('bienvenida-activa');
+        document.body.classList.add('bienvenida-activa');
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+      }
+
+      // Función para desbloquear scroll
+      function desbloquearScroll() {
+        document.documentElement.classList.remove('bienvenida-activa');
+        document.body.classList.remove('bienvenida-activa');
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+      }
+
+      // Función para iniciar experiencia
+      function iniciarInvitacion() {
+        console.log('✓ Botón Empezar clickeado');
+
+        // 1. Ocultar pantalla de bienvenida
+        if (pantallaBienvenida) {
+          pantallaBienvenida.style.display = 'none';
+          desbloquearScroll();
+          console.log('✓ Pantalla de bienvenida ocultada - Scroll desbloqueado');
+        }
+
+        // 2. Reproducir música
+        if (audioElement) {
+          audioElement.volume = 0.5;
+          audioElement.play().then(() => {
+            console.log('✓ Música iniciada');
+          }).catch(error => {
+            console.log('✗ Error música:', error);
           });
         }
 
-        // Evento para botones de copiar en el modal de regalos
-        $(document).on('click', '#modalRegalos .btn-copiar', function (e) {
-          e.preventDefault();
-          var texto = $(this).data('text');
-          var tipo = $(this).data('tipo');
+        // 3. Desplazar al top de la página
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 100);
+      }
 
-          if (copiarAlPortapapeles(texto)) {
-            // Mostrar mensaje de confirmación
-            var mensaje = $('#modalRegalos #mensaje-copiado');
-            mensaje.text(tipo === 'alias' ? '¡Alias copiado!' : '¡CBU copiado!');
-            mensaje.fadeIn(300);
+      // Asignar evento al botón
+      if (btnEmpezar) {
+        btnEmpezar.addEventListener('click', iniciarInvitacion);
+        console.log('✓ Botón Empezar listo');
+      }
 
-            // Ocultar mensaje después de 2 segundos
-            setTimeout(function () {
-              mensaje.fadeOut(300);
-            }, 2000);
+      // Bloquear scroll mientras está el menú de bienvenida
+      bloquearScroll();
+      console.log('✓ Scroll bloqueado al cargar');
 
-            // Cambiar temporalmente el texto del botón
-            var boton = $(this);
-            var textoOriginal = boton.html();
-            boton.html('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/></svg>Copiado');
-            boton.css('background-color', 'var(--color-5)');
+      // Prevenir scroll táctil en móviles cuando está activa la pantalla de bienvenida
+      function preventScroll(e) {
+        e.preventDefault();
+      }
 
-            // Restaurar después de 1.5 segundos
-            setTimeout(function () {
-              boton.html(textoOriginal);
-              boton.css('background-color', '');
-            }, 1500);
-          }
-        });
+      // Bloquear eventos de scroll táctil
+      document.addEventListener('touchmove', preventScroll, { passive: false });
+      document.addEventListener('wheel', preventScroll, { passive: false });
 
-        // Asegurar que el modal esté listo
-        $('#modalRegalos').on('shown.bs.modal', function () {
-          // Resetear mensaje cuando se abre el modal
-          $('#modalRegalos #mensaje-copiado').hide();
-        });
-        // LÓGICA DE MÚSICA Y BOTÓN EMPEZAR - SIMPLE Y DIRECTA
-        // Elementos clave
-        const pantallaBienvenida = document.getElementById('pantalla-bienvenida');
-        const btnEmpezar = document.getElementById('btn-empezar');
-        const audioElement = document.getElementById('cancion');
+      // Al hacer clic en Empezar, permitir scroll
+      function permitirScrollConEventos() {
+        document.removeEventListener('touchmove', preventScroll);
+        document.removeEventListener('wheel', preventScroll);
+        console.log('✓ Scroll táctil permitido');
+      }
 
-        // Función para bloquear scroll
-        function bloquearScroll() {
-          document.documentElement.classList.add('bienvenida-activa');
-          document.body.classList.add('bienvenida-activa');
-          document.body.style.overflow = 'hidden';
-          document.documentElement.style.overflow = 'hidden';
-        }
+      // Actualizar la función iniciarInvitacion para permitir scroll
+      const iniciarInvitacionAnterior = iniciarInvitacion;
+      function iniciarInvitacionActualizada() {
+        iniciarInvitacionAnterior();
+        permitirScrollConEventos();
+      }
 
-        // Función para desbloquear scroll
-        function desbloquearScroll() {
-          document.documentElement.classList.remove('bienvenida-activa');
-          document.body.classList.remove('bienvenida-activa');
-          document.body.style.overflow = '';
-          document.documentElement.style.overflow = '';
-        }
+      // Reemplazar el evento del botón
+      if (btnEmpezar) {
+        btnEmpezar.removeEventListener('click', iniciarInvitacion);
+        btnEmpezar.addEventListener('click', iniciarInvitacionActualizada);
+      }
 
-        // Función para iniciar experiencia
-        function iniciarInvitacion() {
-          console.log('✓ Botón Empezar clickeado');
+      // Inicializar Animaciones
+      try { AOS.init(); } catch (e) { }
 
-          // 1. Ocultar pantalla de bienvenida
-          if (pantallaBienvenida) {
-            pantallaBienvenida.style.display = 'none';
-            desbloquearScroll();
-            console.log('✓ Pantalla de bienvenida ocultada - Scroll desbloqueado');
-          }
-
-          // 2. Reproducir música
-          if (audioElement) {
-            audioElement.volume = 0.5;
-            audioElement.play().then(() => {
-              console.log('✓ Música iniciada');
-            }).catch(error => {
-              console.log('✗ Error música:', error);
-            });
-          }
-
-          // 3. Desplazar al top de la página
-          setTimeout(() => {
-            window.scrollTo(0, 0);
-          }, 100);
-        }
-
-        // Asignar evento al botón
-        if (btnEmpezar) {
-          btnEmpezar.addEventListener('click', iniciarInvitacion);
-          console.log('✓ Botón Empezar listo');
-        }
-
-        // Bloquear scroll mientras está el menú de bienvenida
-        bloquearScroll();
-        console.log('✓ Scroll bloqueado al cargar');
-
-        // Prevenir scroll táctil en móviles cuando está activa la pantalla de bienvenida
-        function preventScroll(e) {
-          e.preventDefault();
-        }
-
-        // Bloquear eventos de scroll táctil
-        document.addEventListener('touchmove', preventScroll, { passive: false });
-        document.addEventListener('wheel', preventScroll, { passive: false });
-
-        // Al hacer clic en Empezar, permitir scroll
-        function permitirScrollConEventos() {
-          document.removeEventListener('touchmove', preventScroll);
-          document.removeEventListener('wheel', preventScroll);
-          console.log('✓ Scroll táctil permitido');
-        }
-
-        // Actualizar la función iniciarInvitacion para permitir scroll
-        const iniciarInvitacionAnterior = iniciarInvitacion;
-        function iniciarInvitacionActualizada() {
-          iniciarInvitacionAnterior();
-          permitirScrollConEventos();
-        }
-
-        // Reemplazar el evento del botón
-        if (btnEmpezar) {
-          btnEmpezar.removeEventListener('click', iniciarInvitacion);
-          btnEmpezar.addEventListener('click', iniciarInvitacionActualizada);
-        }
-
-        // Inicializar Animaciones
-        try { AOS.init(); } catch (e) { }
-
-        // Inicializar Carrusel
-        $('.carrusel').slick({
-          dots: true,
-          infinite: true,
-          speed: 500,
-          fade: true,
-          cssEase: 'linear',
-          autoplay: true,
-          autoplaySpeed: 2000,
-          arrows: true,
-          responsive: [{
-            breakpoint: 768,
-            settings: { arrows: false, dots: true }
-          }]
-        });
+      // Inicializar Carrusel
+      $('.carrusel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [{
+          breakpoint: 768,
+          settings: { arrows: false, dots: true }
+        }]
       });
-    </script>
+    });
+  </script>
 </body>
 
 </html>
