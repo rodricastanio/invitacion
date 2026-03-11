@@ -2312,14 +2312,14 @@ section.footer .box-nombres-fecha-portada #fecha {
   white-space: nowrap;
   width: auto;
   font-family: var(--fuente-1);
-  font-size: 24px;
-  line-height: 20px;
+  font-size: 28px;           /* Texto más grande */
+  line-height: 24px;          /* Ajustá la altura de línea */
   color: var(--color-1);
-  padding: 8px 25px 10px;
+  padding: 18px 50px 20px;    /* ¡Mucho más grande! */
   margin-bottom: 30px;
   border: 2px solid;
   border-image-slice: 1;
-  border-width: 1px;
+  border-width: 2px;          /* Borde más grueso */
   border-image-source: linear-gradient(to right, var(--color-1), var(--color-2), var(--color-1));
 }
 
